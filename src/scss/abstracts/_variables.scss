@@ -8,15 +8,15 @@
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 
-$main-c: hsl(0, 0%, 93%);
-$hero-c: hsl(47, 100%, 50%);
+$main-c: hsl(0, 0%, 5%);
+$hero-c: hsl(332, 100%, 32%);
 $link-c: $main-c;
-$link-hvr-c: hsl(184, 100%, 49%);
+$link-hvr-c: $hero-c;
 
 //================
 //  backgrounds:
 //================
-$body-bg-c: hsl(0, 0%, 9%);
+$body-bg-c: hsl(222, 15%, 87%);
 $nav-bg-c: transparent;
 
 //===================
