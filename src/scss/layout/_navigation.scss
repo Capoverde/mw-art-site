@@ -5,39 +5,25 @@
 ==================================================*/
 
 .navbar {
-  width: 100%;
-  padding: 0.1em 0;
   display: flex;
   justify-content: space-between;
+  height: 80px;
   align-items: center;
-  background: $nav-bg-c;
-  // outline: 1px solid $main-c;
 
-  .logo {
-    margin: 0 auto 0 2em;
+  > div{
+    padding: 0 30px;
+    font-size: 20px;
   }
 
-  &__list {
-    display: flex;
-    width: fit-content;
-    margin-right: 2em;
+  .menu{
+    margin-right: auto;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 1em;
-  }
-
-  &__link {
-    overflow: hidden;
-    color: $link-c;
-    @include transition(all, 0.35s, ease-in-out);
-
-    &:hover {
-      color: $link-hvr-c;
-    }
+  .lang{
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
 
-.navbar__link--active {
-  color: $link-hvr-c;
-}
+
