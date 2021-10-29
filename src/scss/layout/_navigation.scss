@@ -22,14 +22,29 @@
   .lang{
     position: relative;
     font-size: 10px;
-    font-weight: 600;
     text-transform: uppercase;
-    cursor:pointer;
     font-weight: 900;
+    overflow:hidden;
+    width: 20px;
+    height: 15px;
+    cursor:pointer;
+    // outline: 1px solid red;
 
-  
+    .plen{
+      position: absolute;
+      @include transition(all, .25s);
+    }
+
+    &:hover{
+      .plen{
+        @include transition(all, .25s);
+          top:-100%;
+      }
+    }
+
     .frame1,
     .frame2{
+      display: inline-block;
       position: absolute;
       @include transition(all, .25s);
     }   
@@ -39,8 +54,7 @@
     }
 
     .frame2{
-      right:22px;
-
+      right:10px;
     }
 
     &:hover{
@@ -49,10 +63,12 @@
       }
 
       .frame2{
-        right:18px;
+        right:6px;
       }
     }
   }
 }
 
-
+.search{
+  cursor: pointer;
+}
