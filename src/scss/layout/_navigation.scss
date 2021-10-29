@@ -20,9 +20,38 @@
   }
 
   .lang{
+    position: relative;
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor:pointer;
+    font-weight: 900;
+
+  
+    .frame1,
+    .frame2{
+      position: absolute;
+      @include transition(all, .25s);
+    }   
+
+    .frame1{
+      left:22px;
+    }
+
+    .frame2{
+      right:22px;
+
+    }
+
+    &:hover{
+      .frame1{
+        left:18px;
+      }
+
+      .frame2{
+        right:18px;
+      }
+    }
   }
 }
 
