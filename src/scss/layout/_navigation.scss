@@ -32,12 +32,12 @@
 
     .plen{
       position: absolute;
-      @include transition(all, .25s);
+      @include transition(all, .25s, ease-in-out);
     }
 
     &:hover{
       .plen{
-        @include transition(all, .25s);
+
           top:-100%;
       }
     }
