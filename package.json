@@ -19,7 +19,11 @@
       "url": "https://pnikoloff.com"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.8.0",
+    "jquery": "^3.6.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
