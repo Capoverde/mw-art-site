@@ -2,10 +2,39 @@
                     HEADER
 ================================================== */
 
-.header__main {
-  padding: 2em;
+.headers {
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+  //  outline: 1px solid red;
+   
 
-  h1 {
-    text-align: center;
-  }
+   .text__wrapper{
+    // background: red;
+    transform:rotateZ(-90deg);
+    
+
+    h1,h2{
+      text-transform: uppercase;
+      line-height: .88;
+      font-weight: 800;
+      font-family: 'Anton', sans-serif;
+    }
+
+    h1{
+      font-size: 10rem;
+    }
+
+    h2{
+      font-size: 8rem;
+      color: $hero-c;
+    }
+
+    p{
+      margin-top: 50px;
+      padding-right: 50px;
+    }
+   }
 }

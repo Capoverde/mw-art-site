@@ -4,7 +4,7 @@
 
 .header__wrapper {
     display: grid;
-    grid-template-columns: 0.2fr 0.7fr 2.1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 2.1fr 1fr;
     grid-template-rows: 0.2fr 1.8fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -16,7 +16,7 @@
   
   .navbar { grid-area: navbar; }
   
-  .aside-left { grid-area: aside-left; }
+  .aside-left { grid-area: aside-left;}
   
   .headers { grid-area: headers; }
   

@@ -1,8 +1,17 @@
 .media{
+    overflow: hidden;
+    height: 100vh;
+
     .socials__list{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transform: rotateZ(-90deg);
+
         &-item{
-         
             &-link{
+                margin-left: 50px;
                 &:hover{
                     @include transition(all, .35s, ease-in-out);
                     font-size: 1.3rem;
