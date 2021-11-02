@@ -1,0 +1,13 @@
+.media{
+    .socials__list{
+        &-item{
+         
+            &-link{
+                &:hover{
+                    @include transition(all, .35s, ease-in);
+                    transform: scale(2.2);
+                }
+            }
+        }
+    }
+}
