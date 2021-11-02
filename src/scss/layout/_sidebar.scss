@@ -4,8 +4,8 @@
          
             &-link{
                 &:hover{
-                    @include transition(all, .35s, ease-in);
-                    transform: scale(2.2);
+                    @include transition(all, .35s, ease-in-out);
+                    font-size: 1.3rem;
                 }
             }
         }
