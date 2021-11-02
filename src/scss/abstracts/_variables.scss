@@ -12,6 +12,7 @@ $main-c: hsl(0, 0%, 5%);
 $hero-c: hsl(332, 100%, 32%);
 $link-c: $main-c;
 $link-hvr-c: $hero-c;
+$menu-btn-border-c: hsl(0, 0%, 93%);
 
 //================
 //  backgrounds:
@@ -22,3 +23,9 @@ $nav-bg-c: transparent;
 //===================
 //  widths & heights:
 //===================
+
+$menu-btn-width: 80px;
+$menu-btn-height: 80px;
+
+$burger-width: 50px;
+$burger-height: 6px;

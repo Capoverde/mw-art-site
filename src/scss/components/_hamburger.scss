@@ -1,0 +1,79 @@
+//###################################################
+//#################    hamburger     ################
+//##################################################
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $menu-btn-width;
+    height: $menu-btn-height;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid $menu-btn-border-c;
+    overflow: hidden;
+  
+    &__burger {
+      width: $burger-width;
+      height: $burger-height;
+      background: $main-c;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+      transition: all 0.5s ease-in-out;
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: $burger-width;
+        height: $burger-height;
+        background: $main-c;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.5s ease-in-out;
+      }
+  
+      &::before {
+        transform: translateY(-16px);
+      }
+  
+      &::after {
+        transform: translateY(16px);
+        -webkit-transform: translateY(16px);
+        -moz-transform: translateY(16px);
+        -ms-transform: translateY(16px);
+        -o-transform: translateY(16px);
+      }
+    }
+  }
+  
+  //================
+  //  JS class:
+  //================
+  
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  
+    &::before {
+      transform: rotate(45deg) translate(35px, -35px);
+      -webkit-transform: rotate(45deg) translate(35px, -35px);
+      -moz-transform: rotate(45deg) translate(35px, -35px);
+      -ms-transform: rotate(45deg) translate(35px, -35px);
+      -o-transform: rotate(45deg) translate(35px, -35px);
+    }
+  
+    &::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+      -webkit-transform: rotate(-45deg) translate(35px, 35px);
+      -moz-transform: rotate(-45deg) translate(35px, 35px);
+      -ms-transform: rotate(-45deg) translate(35px, 35px);
+      -o-transform: rotate(-45deg) translate(35px, 35px);
+  }
+  }
