@@ -63,6 +63,7 @@ module.exports = {
               publicPath: '../',
               limit: environment.limits.fonts,
             },
+
           },
         ],
       },
@@ -88,6 +89,7 @@ module.exports = {
         },
       ],
     }),
+  
   ].concat(htmlPluginEntries),
   target: 'web',
 };

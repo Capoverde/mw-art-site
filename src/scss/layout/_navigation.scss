@@ -5,20 +5,21 @@
 ==================================================*/
 
 .navbar {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   height: 80px;
   align-items: center;
   padding: 0 50px;
+
 
   > div{
     padding: 0 30px;
     font-size: 20px;
   }
 
-  .menu{
-    margin-right: auto;
-  }
+.logo{
+  flex-basis: 90%;
+}
 
   .lang{
     position: relative;
@@ -31,6 +32,7 @@
     cursor:pointer;
     // outline: 1px solid red;
     margin-right: 60px;
+    justify-self: end;
 
     .plen{
       position: absolute;
