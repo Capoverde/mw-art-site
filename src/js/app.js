@@ -1,6 +1,6 @@
 import '../scss/app.scss'
 /* Partials */
-import './demo.js'
+import './gsap.js'
 import './hamburger.js'
 import './jQuery.js'
 /* Libs */
